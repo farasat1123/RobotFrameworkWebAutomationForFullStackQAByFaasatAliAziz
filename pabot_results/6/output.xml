@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on win32)" generated="20230331 10:46:36.125" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ThirdScript" source="C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\ThirdScript.robot">
+<test id="s1-s1-t1" name="Landing Login Page Test Case" line="28">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230331 10:46:36.404" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20230331 10:46:36.402" endtime="20230331 10:46:39.051"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:36.402" endtime="20230331 10:46:39.052"/>
+</test>
+<test id="s1-s1-t2" name="Login Test Case" line="31">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${Header}</arg>
+<arg>${Text}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230331 10:46:39.092" level="INFO">Element 'xpath://div[@class='login_logo']' contains text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230331 10:46:39.055" endtime="20230331 10:46:39.092"/>
+</kw>
+<kw name="search for the login button">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${UsernameText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:39.095" level="INFO">Typing text 'Admin' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230331 10:46:39.094" endtime="20230331 10:46:39.200"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${PasswordText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:39.202" level="INFO">Typing text 'admin123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230331 10:46:39.200" endtime="20230331 10:46:39.288"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<arg>${KeyName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230331 10:46:39.289" level="INFO">Sending key(s) ('ENTER',) to xpath:(//input[@id='login-button'])[1] element.</msg>
+<msg timestamp="20230331 10:46:39.584" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230331 10:46:39.584" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230331 10:46:39.288" endtime="20230331 10:46:39.593"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:39.093" endtime="20230331 10:46:39.594"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230331 10:46:39.594" endtime="20230331 10:46:41.797"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:39.053" endtime="20230331 10:46:41.798"/>
+</test>
+<status status="PASS" starttime="20230331 10:46:36.157" endtime="20230331 10:46:41.798"/>
+</suite>
+<status status="PASS" starttime="20230331 10:46:36.134" endtime="20230331 10:46:41.800"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="ThirdScript">Suites.ThirdScript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

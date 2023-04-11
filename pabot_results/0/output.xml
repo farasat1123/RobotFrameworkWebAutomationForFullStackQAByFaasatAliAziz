@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on win32)" generated="20230331 10:46:26.724" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="FifthScript" source="C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\FifthScript.robot">
+<test id="s1-s1-t1" name="Landing Login Page Test Case" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230331 10:46:27.099" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20230331 10:46:27.098" endtime="20230331 10:46:31.126"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230331 10:46:31.278" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230331 10:46:31.126" endtime="20230331 10:46:31.278"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230331 10:46:31.279" endtime="20230331 10:46:33.838"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:27.097" endtime="20230331 10:46:33.839"/>
+</test>
+<test id="s1-s1-t2" name="InCorrect Login Test Case" line="24">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230331 10:46:33.841" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20230331 10:46:33.841" endtime="20230331 10:46:36.323"/>
+</kw>
+<kw name="Incorrect login attempt" library="LoginPageKeyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${UsernameText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:36.327" level="INFO">Typing text 'Admin' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230331 10:46:36.325" endtime="20230331 10:46:36.436"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${PasswordText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:36.438" level="INFO">Typing text 'admin123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230331 10:46:36.437" endtime="20230331 10:46:36.550"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<arg>${KeyName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230331 10:46:36.551" level="INFO">Sending key(s) ('ENTER',) to xpath:(//input[@id='login-button'])[1] element.</msg>
+<msg timestamp="20230331 10:46:37.013" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230331 10:46:37.013" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230331 10:46:36.550" endtime="20230331 10:46:37.068"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:36.323" endtime="20230331 10:46:37.068"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${error}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230331 10:46:37.115" level="INFO">Element 'css:h3[data-test='error']' is displayed.</msg>
+<status status="PASS" starttime="20230331 10:46:37.068" endtime="20230331 10:46:37.115"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230331 10:46:37.234" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230331 10:46:37.116" endtime="20230331 10:46:37.234"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230331 10:46:37.234" endtime="20230331 10:46:39.720"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:33.840" endtime="20230331 10:46:39.720"/>
+</test>
+<test id="s1-s1-t3" name="Correct login Test case" line="31">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230331 10:46:39.727" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20230331 10:46:39.725" endtime="20230331 10:46:42.278"/>
+</kw>
+<kw name="Login with user defined creds" library="LoginPageKeyword">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${uname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:42.282" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230331 10:46:42.281" endtime="20230331 10:46:42.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:42.523" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230331 10:46:42.522" endtime="20230331 10:46:42.646"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<arg>${KeyName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230331 10:46:42.647" level="INFO">Sending key(s) ('ENTER',) to xpath:(//input[@id='login-button'])[1] element.</msg>
+<msg timestamp="20230331 10:46:42.988" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230331 10:46:42.989" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230331 10:46:42.647" endtime="20230331 10:46:42.994"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:42.280" endtime="20230331 10:46:42.995"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${appLogo}</arg>
+<arg>${Text}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230331 10:46:43.020" level="INFO">Element 'css:div[class='app_logo']' contains text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230331 10:46:42.995" endtime="20230331 10:46:43.020"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${menuButton}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230331 10:46:43.041" level="INFO">Element 'xpath://button[@id='react-burger-menu-btn']' is displayed.</msg>
+<status status="PASS" starttime="20230331 10:46:43.021" endtime="20230331 10:46:43.041"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230331 10:46:43.170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230331 10:46:43.042" endtime="20230331 10:46:43.170"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230331 10:46:43.170" endtime="20230331 10:46:45.423"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:39.722" endtime="20230331 10:46:45.423"/>
+</test>
+<status status="PASS" starttime="20230331 10:46:26.754" endtime="20230331 10:46:45.425"/>
+</suite>
+<status status="PASS" starttime="20230331 10:46:26.736" endtime="20230331 10:46:45.426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="FifthScript">Suites.FifthScript</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230331 10:46:26.998" level="ERROR">Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\FifthScript.robot' on line 3: Importing library 'AllureReportingLibrary' failed: ModuleNotFoundError: No module named 'AllureReportingLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages</msg>
+<msg timestamp="20230331 10:46:27.001" level="ERROR">Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\FifthScript.robot' on line 4: Importing library 'RPA.Browser' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages</msg>
+<msg timestamp="20230331 10:46:27.095" level="ERROR">Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\Resources\LoginPageKeyword.robot' on line 6: Processing variable file '../Variables/Locators/Locators.JSON' failed: Importing variable file '../Variables/Locators/Locators.JSON' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages</msg>
+</errors>
+</robot>

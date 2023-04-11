@@ -1,0 +1,23 @@
+<environment>
+	<parameter>
+		<key> Automation </key>
+		<value> Robot Framework Web</value>
+	</parameter>
+    <parameter>
+	    <key> Platform </key>
+	    <value> Website </value>
+	</parameter>
+	<parameter>
+		<key> Environment </key>
+		<value> Production  </value>
+	</parameter>
+	<parameter>
+		<key> Website Version </key>
+		<value> 13.2.1 </value>
+	</parameter>
+	<parameter>
+		<key> Python version </key>
+		<value> Python 3.10.6 </value>
+	</parameter>
+
+</environment>

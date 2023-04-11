@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on win32)" generated="20230331 10:46:26.757" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="FourthScript" source="C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\FourthScript.robot">
+<test id="s1-s1-t1" name="Landing Login Page Test Case" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230331 10:46:27.139" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<status status="PASS" starttime="20230331 10:46:27.138" endtime="20230331 10:46:31.363"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:27.137" endtime="20230331 10:46:31.364"/>
+</test>
+<test id="s1-s1-t2" name="InCorrect Login Test Case" line="18">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${Header}</arg>
+<arg>${Text}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230331 10:46:31.445" level="INFO">Element 'xpath://div[@class='login_logo']' contains text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230331 10:46:31.367" endtime="20230331 10:46:31.445"/>
+</kw>
+<kw name="Incorrect login attempt" library="LoginPageKeyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${UsernameText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:31.447" level="INFO">Typing text 'Admin' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230331 10:46:31.446" endtime="20230331 10:46:31.619"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${PasswordText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:31.621" level="INFO">Typing text 'admin123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230331 10:46:31.620" endtime="20230331 10:46:31.732"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<arg>${KeyName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230331 10:46:31.735" level="INFO">Sending key(s) ('ENTER',) to xpath:(//input[@id='login-button'])[1] element.</msg>
+<msg timestamp="20230331 10:46:32.045" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230331 10:46:32.045" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230331 10:46:31.732" endtime="20230331 10:46:32.050"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:31.446" endtime="20230331 10:46:32.050"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${error}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230331 10:46:32.076" level="INFO">Element 'css:h3[data-test='error']' is displayed.</msg>
+<status status="PASS" starttime="20230331 10:46:32.050" endtime="20230331 10:46:32.076"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:31.364" endtime="20230331 10:46:32.076"/>
+</test>
+<test id="s1-s1-t3" name="Correct login Test case" line="23">
+<kw name="Login with user defined creds" library="LoginPageKeyword">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${uname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:32.078" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20230331 10:46:32.077" endtime="20230331 10:46:32.150"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230331 10:46:32.151" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230331 10:46:32.150" endtime="20230331 10:46:32.202"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${LoginButton}</arg>
+<arg>${KeyName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230331 10:46:32.203" level="INFO">Sending key(s) ('ENTER',) to xpath:(//input[@id='login-button'])[1] element.</msg>
+<msg timestamp="20230331 10:46:32.561" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230331 10:46:32.561" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230331 10:46:32.202" endtime="20230331 10:46:32.569"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:32.077" endtime="20230331 10:46:32.569"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${appLogo}</arg>
+<arg>${Text}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20230331 10:46:32.598" level="INFO">Element 'xpath:(//div[@class='app_logo'])[1]' contains text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230331 10:46:32.569" endtime="20230331 10:46:32.598"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${menuButton}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230331 10:46:32.624" level="INFO">Element 'xpath://button[@id='react-burger-menu-btn']' is displayed.</msg>
+<status status="PASS" starttime="20230331 10:46:32.598" endtime="20230331 10:46:32.624"/>
+</kw>
+<status status="PASS" starttime="20230331 10:46:32.076" endtime="20230331 10:46:32.625"/>
+</test>
+<status status="PASS" starttime="20230331 10:46:26.789" endtime="20230331 10:46:32.625"/>
+</suite>
+<status status="PASS" starttime="20230331 10:46:26.769" endtime="20230331 10:46:32.626"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="FourthScript">Suites.FourthScript</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230331 10:46:27.135" level="ERROR">Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\Resources\LoginPageKeyword.robot' on line 6: Processing variable file '../Variables/Locators/Locators.JSON' failed: Importing variable file '../Variables/Locators/Locators.JSON' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages</msg>
+</errors>
+</robot>

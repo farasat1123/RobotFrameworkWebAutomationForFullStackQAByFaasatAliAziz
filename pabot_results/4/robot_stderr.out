@@ -1,0 +1,33 @@
+[ ERROR ] Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\SeventhScript.robot' on line 3: Importing library 'AllureReportingLibrary' failed: ModuleNotFoundError: No module named 'AllureReportingLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages
+[ ERROR ] Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\SeventhScript.robot' on line 4: Importing library 'RPA.Browser' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages
+[ ERROR ] Error in file 'C:\Users\Farasat Aziz\PycharmProjects\RTL\TestCases\SeventhScript.robot' on line 8: Processing variable file '../Variables/Locators/Locators.JSON' failed: Importing variable file '../Variables/Locators/Locators.JSON' failed: ModuleNotFoundError: No module named '.'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\Scripts\robot.exe
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Farasat Aziz\AppData\Local\Programs\Python\Python310
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv
+  C:\Users\Farasat Aziz\PycharmProjects\RTL\venv\lib\site-packages

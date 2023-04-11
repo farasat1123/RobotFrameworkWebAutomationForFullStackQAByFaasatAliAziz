@@ -1,0 +1,7 @@
+LoginButton="xpath:(//input[@id='login-button'])[1]"
+Username="id:user-name"
+Password="id:password"
+Header="xpath://div[@class='login_logo']"
+error="css:h3[data-test='error']"
+appLogo="xpath:(//div[@class='app_logo'])[1]"
+menuButton="xpath://button[@id='react-burger-menu-btn']"

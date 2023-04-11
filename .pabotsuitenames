@@ -1,0 +1,11 @@
+datasources:93e0ecf3abcc06e731de7c6f6ed155194b200031
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:ac6608b959f3fbe8a74903f5a652b4f7a2de593e
+--suite Suites.FifthScript
+--suite Suites.FirstScript
+--suite Suites.FourthScript
+--suite Suites.SecondScript
+--suite Suites.SeventhScript
+--suite Suites.SixScriptWithTags
+--suite Suites.ThirdScript

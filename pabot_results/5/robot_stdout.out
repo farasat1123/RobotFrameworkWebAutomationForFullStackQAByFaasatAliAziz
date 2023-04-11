@@ -1,0 +1,18 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.SixScriptWithTags                                                      
+==============================================================================
+Landing Login Page Test Case :: This test case opens the landing l... | PASS |
+------------------------------------------------------------------------------
+InCorrect Login Test Case :: This test case verifies that an error... | PASS |
+------------------------------------------------------------------------------
+Correct login Test case :: This test case logs in with valid crede... | PASS |
+------------------------------------------------------------------------------
+Suites.SixScriptWithTags :: Robot Framework Web FullStack QA Program  | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Farasat Aziz\PycharmProjects\RTL\pabot_results\5\output.xml

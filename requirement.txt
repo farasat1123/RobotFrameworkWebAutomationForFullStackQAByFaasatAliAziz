@@ -1,0 +1,13 @@
+pip==23.0.1
+selenium == 4.8.3
+robotframework == 6.0.2
+robotframework-seleniumlibrary == 6.0.0
+robotframework-pythonlibcore == 4.1.2
+robotframework-pabot == 2.14.0
+robotframework-jsonlibrary == 0.5
+robotframework-allurereport == 1.1.1
+robotframework-AllureClient == 0.0.8
+allure-behave ==  2.10.0
+allure-robotframework == 2.13.1
+allure-python-commons == 2.13.1
+
